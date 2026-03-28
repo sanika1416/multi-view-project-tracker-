@@ -1,50 +1,84 @@
-# ?? Multi-View Project Tracker
+# 🚀 Multi-View Project Tracker – Velotrack
 
-A modern, responsive project management application built with React + TypeScript, featuring multiple views and a fully interactive Kanban board.
+A modern multi-view project management dashboard built with **React + TypeScript**.  
+Supports **Kanban**, **List (virtualized)**, and **Timeline views**, with drag & drop, filtering, and live collaboration simulation.
 
---- 
+---
 
-## ?? Features 
-- ?? Kanban Board with 4 columns: To Do, In Progress, In Review, Done 
-- ?? Task Management: create, edit, delete tasks 
-- ?? Search Functionality 
-- ? Large Dataset Support 
+## 🌐 Live Demo
 
---- 
+[Check the live project here](https://bit.ly/task-tracker-sanika)
 
-## ?? Screenshots 
-![Kanban Board](screenshots/kanban.png) 
-![List View](screenshots/list-view.png) 
-![Timeline View](screenshots/timeline.png) 
+---
 
---- 
+## 📌 Features
 
-## ?? Tech Stack 
-- React 
-- TypeScript 
-- Vite 
-- DnD Kit 
-- Tailwind CSS / CSS 
+### 🗂️ Multi View System
+- Kanban Board (drag & drop tasks between columns)  
+- List View (optimized with virtualization)  
+- Timeline View (Gantt-style project tracking)
 
---- 
+### ⚡ Task Management
+- Create new tasks  
+- Update task status  
+- Assign priority (Low, Medium, High, Critical)  
+- Set due dates
 
-## ?? Live Demo 
-[Check the live project here](https://bit.ly/task-tracker-sanika) 
+### 🔍 Smart Filtering
+- Filter by status, priority, or assignee  
+- Instant search for tasks
 
---- 
+### 🧑‍🤝‍🧑 Live Collaboration Simulation
+- Simulated active users  
+- Real-time task movement updates
 
-## ?? GitHub Repository 
-[https://github.com/sanika1416/multi-view-project-tracker](https://github.com/sanika1416/multi-view-project-tracker) 
+### 🖱️ Drag & Drop System
+- Smooth pointer-based drag interactions  
+- Visual drop target highlighting  
+- Drag preview cards
 
---- 
+### 📊 Performance Optimized
+- Virtualized list rendering for large datasets  
+- Memoized filtering and grouping  
 
-## ?? Run Locally 
-git clone https://github.com/sanika1416/multi-view-project-tracker 
-cd multi-view-project-tracker 
-npm install 
-npm run dev 
+---
 
---- 
+## 🖼 Screenshots / GIFs
 
-## ?? License 
-MIT License 
+![Kanban Board](screenshots/kanban.png)  
+![Drag & Drop Tasks](screenshots/drag-drop.gif)  
+![List View](screenshots/list-view.png)  
+![Timeline View](screenshots/timeline.png)
+
+> 📌 Place all screenshots/GIFs in the `screenshots/` folder in the root directory.
+
+---
+
+## 🛠 Tech Stack
+
+- React (TypeScript)  
+- Zustand (State Management)  
+- Tailwind CSS  
+- Vite / Create React App (based on setup)  
+- Custom Drag & Drop logic  
+
+---
+
+## 📂 Project Structure
+
+```text
+multi-view-project-tracker/
+├─ src/
+│  ├─ components/
+│  │  ├─ Kanban.tsx
+│  │  ├─ TaskCard.tsx
+│  │  ├─ TaskRow.tsx
+│  │  └─ ListView.tsx
+│  ├─ store/
+│  │  └─ store.ts
+│  ├─ App.tsx
+│  └─ main.tsx
+├─ screenshots/
+├─ README.md
+├─ LICENSE
+└─ package.json
